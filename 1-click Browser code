@@ -1,0 +1,18 @@
+#This tool will be used to open multiple websites/tabs in 1-click.
+
+import webbrowser
+import time
+socialMedialUrls = ["www.Google.com", "www.youtube.com"]
+techUrls = [www.Howtogeek.com"]
+
+def open_tabs(url_list):
+	for element in url_list:
+	webbrowser.open_new_tab(element)
+	
+def main():
+	webbrowser.open("www.youtube.com", new=0, autoraise=False)
+	time.sleep(1)
+	open_tabs(socialMedialUrls)
+	open_tabs(techUrls)
+	
+main()
